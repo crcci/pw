@@ -7,6 +7,8 @@ services:
     # ports:
     expose:
       - "3000"
+    ports:
+      - "3000:3000"
     container_name: react-app
     command: npm start
     networks:
