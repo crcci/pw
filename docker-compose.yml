@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  react-app:
+    build:
+      context: ..
+    ports:
+      - "3000:3000"
+    container_name: react-app
+    networks:
+      - react-playwright-network
+
+  playwright-tests:
+    build:
+      context: .
+    container_name: playwright-tests
+    depends_on:
+      - react-app
+    environment:
+      - REACT_APP_SERVER_URL=http://react-app:3000  # URL for the React app within the Docker network
+    networks:
+      - react-playwright-network
+
+networks:
+  react-playwright-network:
+    driver: bridge
