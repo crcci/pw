@@ -10,7 +10,7 @@ services:
     container_name: react-app
     command: npm start
     networks:
-      - react-playwright-network
+      - nt
 
   playwright-tests:
     build:
@@ -22,8 +22,8 @@ services:
       - REACT_APP_SERVER_URL=http://react-app:3000  # URL for the React app within the Docker network
     command: npx playwright test
     networks:
-      - react-playwright-network
+      - nt
 
 networks:
-  react-playwright-network:
+  nt:
     driver: bridge
