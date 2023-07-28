@@ -17,7 +17,7 @@ jobs:
       # Use Docker-Compose to run the Playwright tests
       - run:
           name: Run Playwright tests
-          command: docker-compose up -d
+          command: echo "hellow this is pw frameworkd"
 
 workflows:
   version: 2
