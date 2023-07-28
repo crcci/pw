@@ -7,5 +7,4 @@ test('env link', async ({ page }) => {
   await expect(page).toHaveTitle("No title");
   await expect(page).toHaveURL(/.*checkout/);
   await page.goto("nonrelated");
-
 });
