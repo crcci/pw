@@ -6,7 +6,7 @@ test('test passes', async ({ page }) => {
   await page.goto("http://www.apple.com");
 });
 
-test('test update2', async ({ page }) => {
+test('should fail', async ({ page }) => {
   console.log("start test2");
   const reactAppServerURL = process.env.REACT_APP_SERVER_URL;
   await page.goto("htpp://react-app:3000");
