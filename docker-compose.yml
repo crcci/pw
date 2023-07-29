@@ -20,7 +20,7 @@ services:
     depends_on:
       - react-app
     environment:
-      - REACT_APP_SERVER_URL=http://react-app:3000  # URL for the React app within the Docker network
+      - REACT_APP_SERVER_URL=http://react-app:3000 # URL for the React app within the Docker network
     command: npx playwright test ./tests
     networks:
       - nt
