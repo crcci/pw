@@ -22,8 +22,18 @@ module.exports = defineConfig({
   retries: process.env.CI ? 1 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
+
+  reporter: [
+    ["html", { outputFolder: "./outcome/html", open: process.env.CI ? "never" : "on-failure" }],
+    ["line"],
+    ["junit", { outputFile: "./outcome/test-results/results.xml" }],
+    ["allure-playwright"],
+    // ["@reportportal/agent-js-playwright", RPconfig],
+  ],
+
+
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: process.env.CI ? ['list', 'html'] : 'dot',
+  // reporter: process.env.CI ? 'html' : 'junit',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
