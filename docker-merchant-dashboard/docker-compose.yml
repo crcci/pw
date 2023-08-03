@@ -3,8 +3,8 @@ version: '3.8'
 services:
   react-app:
     build:
-      context: ../../docker-qa
-      dockerfile: ./Dockerfile
+      context: ../
+      dockerfile: ./docker-qa/Dockerfile
     expose:
       - "3000"
     ports:
