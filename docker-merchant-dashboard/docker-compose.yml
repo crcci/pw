@@ -3,8 +3,8 @@ version: '3.8'
 services:
   react-app:
     build:
-      context: ..
-      dockerfile: docker-qa/Dockerfile
+      context: ../docker-qa
+      dockerfile: ./Dockerfile
     expose:
       - "3000"
     ports:
@@ -16,8 +16,8 @@ services:
 
   playwright-tests:
     build:
-      context: .
-      dockerfile: docker-merchant-dashboard/Dockerfile
+      context: ./docker-merchant-dashboard
+      dockerfile: ./Dockerfile
     container_name: playwright-tests
     depends_on:
       - react-app
