@@ -27,7 +27,7 @@ module.exports = defineConfig({
     ["html", { outputFolder: "./outcome/html", open: process.env.CI ? "never" : "on-failure" }],
     ["line"],
     ["junit", { outputFile: "./outcome/test-results/results.xml" }],
-    ["allure-playwright"],
+    // ["allure-playwright"],
     // ["@reportportal/agent-js-playwright", RPconfig],
   ],
 
