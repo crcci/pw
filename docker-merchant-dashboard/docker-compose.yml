@@ -16,7 +16,7 @@ services:
 
   playwright-tests:
     build:
-      context: ./docker-merchant-dashboard
+      context: .
       dockerfile: ./Dockerfile
     container_name: playwright-tests
     depends_on:
