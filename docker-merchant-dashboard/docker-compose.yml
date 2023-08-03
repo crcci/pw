@@ -3,7 +3,7 @@ version: '3.8'
 services:
   react-app:
     build:
-      context: ../
+      context: ../../
       dockerfile: ./docker-qa/Dockerfile
     expose:
       - "3000"
