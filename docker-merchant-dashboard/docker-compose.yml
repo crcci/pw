@@ -16,8 +16,8 @@ services:
 
   playwright-tests:
     build:
-      context: .
-      dockerfile: ./Dockerfile
+      context: ../
+      dockerfile: ./docker-merchant-dashboard/Dockerfile
     container_name: playwright-tests
     depends_on:
       - react-app
