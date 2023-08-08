@@ -24,9 +24,9 @@ module.exports = defineConfig({
   workers: process.env.CI ? 1 : undefined,
 
   reporter: [
-    ["html", { outputFolder: "./outcome/html", open: process.env.CI ? "never" : "on-failure" }],
+    // ["html", { outputFolder: "./outcome/html", open: process.env.CI ? "never" : "on-failure" }],
     ["line"],
-    ["junit", { outputFile: "./outcome/test-results/results.xml" }],
+    ["junits", { outputFile: "./outcome/test-results/results.xml" }],
     // ["allure-playwright"],
     // ["@reportportal/agent-js-playwright", RPconfig],
   ],
