@@ -6,4 +6,4 @@ test('should fail now', async ({ page }) => {
   await page.goto(reactAppServerURL);
   await expect(page).toHaveTitle("No title");
   await expect(page).toHaveURL(/.*checkout/);
-});
+});s

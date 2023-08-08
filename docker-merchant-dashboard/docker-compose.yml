@@ -19,7 +19,7 @@ services:
     networks:
       - nt
 
-  playwright-tests:
+  playwright-tests:s
     build:
       context: ../
       dockerfile: ./docker-merchant-dashboard/Dockerfile
