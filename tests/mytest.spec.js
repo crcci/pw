@@ -4,7 +4,7 @@ test('should fail now', async ({ page }) => {
   console.log("start test2");
   const reactAppServerURL = process.env.REACT_APP_SERVER_URL;
   console.log(reactAppServerURL);
-  await page.goto(reactAppServerURL);
-  // await expect.soft(page).toHaveTitle("No title");
-  // await expect.soft(page).toHaveURL(/.*checkout/);
-});
+  await page.goto(`http://reactAppServerURL`);
+  await expect.soft(page).toHaveTitle("No title");
+  await expect.soft(page).toHaveURL(/.*checkout/);
+}); 
