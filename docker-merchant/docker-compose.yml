@@ -10,7 +10,7 @@ services:
     ports:
       - "3000:3000"
     container_name: react-app
-    command: npm start
+    # command: npm start
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:3000/" ]
       interval: 10s
@@ -19,17 +19,17 @@ services:
     networks:
       - nt
 
-  playwright-tests:s
+  playwright-tests:
     build:
       context: ../
-      dockerfile: ./docker-merchant-dashboard/Dockerfile
+      dockerfile: ./docker-merchant/Dockerfile
     container_name: playwright-tests
     depends_on:
-      redis:
+      react-app:
         condition: service_healthy
     environment:
-      - REACT_APP_SERVER_URL=http://react-app:3000 # URL for the React app within the Docker network
-    command: npx playwright test ./tests
+      - REACT_APP_SERVER_URL=http://react-app:3000
+    # command: npx playwright test ./tests
     networks:
       - nt
 
