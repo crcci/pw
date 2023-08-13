@@ -9,7 +9,7 @@ jobs:
       - checkout
       - setup_remote_docker
 
-      # # Build the Docker image for Playwright tests
+      # # Build  the Docker  image for Playwright tests
       # - run:
       #     name: Build Playwright tests Docker image
       #     command: docker build -t playwright-tests .
