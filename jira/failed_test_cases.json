@@ -5,13 +5,13 @@
       "name": "User should not be logged-in with invalid credentials",
       "attachments": [
         {
-          "path": "../test-results/admin-admin-Admin-Portal-Login-Test-Cases-User-04af9--logged-in-with-invalid-credentials-admin-smoke-chromium-retry1/video.webm"
+          "path": "test-results/admin-admin-Admin-Portal-Login-Test-Cases-User-04af9--logged-in-with-invalid-credentials-admin-smoke-chromium-retry1/video.webm"
         },
         {
-          "path": "../test-results/admin-admin-Admin-Portal-Login-Test-Cases-User-04af9--logged-in-with-invalid-credentials-admin-smoke-chromium-retry1/test-failed-1.png"
+          "path": "test-results/admin-admin-Admin-Portal-Login-Test-Cases-User-04af9--logged-in-with-invalid-credentials-admin-smoke-chromium-retry1/test-failed-1.png"
         },
         {
-          "path": "../test-results/admin-admin-Admin-Portal-Login-Test-Cases-User-04af9--logged-in-with-invalid-credentials-admin-smoke-chromium-retry1/trace.zip"
+          "path": "test-results/admin-admin-Admin-Portal-Login-Test-Cases-User-04af9--logged-in-with-invalid-credentials-admin-smoke-chromium-retry1/trace.zip"
         }
       ]
     },
@@ -25,13 +25,13 @@
       "name": "User should be able to log-in with valid credentials",
       "attachments": [
         {
-          "path": "../test-results/merchant-merchantLogin-Merchant-Portal-valid-i-517c2--log-in-with-valid-credentials-smoke-regression-chromium-retry1/video.webm"
+          "path": "test-results/merchant-merchantLogin-Merchant-Portal-valid-i-517c2--log-in-with-valid-credentials-smoke-regression-chromium-retry1/video.webm"
         },
         {
-          "path": "../test-results/merchant-merchantLogin-Merchant-Portal-valid-i-517c2--log-in-with-valid-credentials-smoke-regression-chromium-retry1/test-failed-1.png"
+          "path": "test-results/merchant-merchantLogin-Merchant-Portal-valid-i-517c2--log-in-with-valid-credentials-smoke-regression-chromium-retry1/test-failed-1.png"
         },
         {
-          "path": "../test-results/merchant-merchantLogin-Merchant-Portal-valid-i-517c2--log-in-with-valid-credentials-smoke-regression-chromium-retry1/trace.zip"
+          "path": "test-results/merchant-merchantLogin-Merchant-Portal-valid-i-517c2--log-in-with-valid-credentials-smoke-regression-chromium-retry1/trace.zip"
         }
       ]
     },
@@ -40,7 +40,7 @@
       "name": "should create a bug report",
       "attachments": [
         {
-          "path": "../test-results/api-tests-should-create-a-bug-report-chromium-retry1/trace.zip"
+          "path": "test-results/api-tests-should-create-a-bug-report-chromium-retry1/trace.zip"
         }
       ]
     }

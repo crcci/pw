@@ -54,7 +54,9 @@ function parseTestResults(xmlFilePath) {
                 failedTestCases.push({
                   test_id: testId,
                   name: testName,
-                  attachments: attachments,
+                  attachments: attachments.map(attachment => ({
+                    path: attachment.path.replace('../', '')
+                  })),
                 });
               }
             }
